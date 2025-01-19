@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习PHP的html页面</title>
+</head>
+
+<body>
+    <!-- 标题标签 -->
+    <h1>一级标题标签</h1>
+    <h2>二级标题标签</h2>
+    <!-- 段落标签 -->
+    <p>
+        Yesterday, when I was young
+        <!-- 分段标签 -->
+        <br>
+        The taste of life was sweet like rain upon my tongue
+        <!-- 下划线标签 -->
+        <hr>
+        <!-- b 标签，使文本粗体展示 -->
+        <strong>I teased at life as if it were a foolish game</strong><br>
+        <!-- em 标签，使文本斜体展示 -->
+        <em>The way an evening breeze would tease a candle flame</em>
+    </p>
+    <hr>
+    <h1>列表标签</h1>
+    <h2>有序列表</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h2>无序列表</h2>
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+    <h2>嵌套列表</h2>
+    <ul>
+        <li>Parent Item 1
+            <ul>
+                <li>Child Item 1.1</li>
+                <li>Child Item 1.2</li>
+            </ul>
+        </li>
+        <li>Parent Item 2
+            <ol>
+                <li>Child Item 2.1</li>
+                <li>Child Item 2.2</li>
+            </ol>
+        </li>
+    </ul>
+    <hr>
+    <h1>链接和图片标签</h1>
+    <h3>链接标签</h3>
+    <a href="http://google.com" title="google">Google</a>
+    <h3>图片标签</h3>
+    <!-- 展示网页上的图片 -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/ISL-HRV_%287%29.jpg/500px-ISL-HRV_%287%29.jpg"
+        alt="图片加载失败" title="莫德里奇">
+    <!-- 展示我电脑上的图片 -->
+    <img src="./rose.png" alt="图片加载失败了" title="玫瑰图片" width="300" height="200">
+    <hr>
+    <h1>表格标签</h1>
+    <table style="width: 600px; text-align: center; border: 1px solid black;">
+        <style>
+            th,
+            td {
+                border: 1px solid black;
+                /* 单元格边框 */
+                padding: 10px;
+                /* 单元格内边距 */
+            }
+        </style>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>max</td>
+                <td>30</td>
+                <td>boy</td>
+            </tr>
+            <tr>
+                <td>tom</td>
+                <td>36</td>
+                <td>boy</td>
+            </tr>
+            <tr>
+                <td>jumpie</td>
+                <td>26</td>
+                <td>girl</td>
+            </tr>
+        </tbody>
+        <!-- <tfoot></tfoot> -->
+    </table>
+    <hr>
+    <h1>表单标签</h1>
+    <form action="" method="post">
+        <!-- 文本框 -->
+        <label for="username">用户名：</label>
+        <input type="text" id="username" name="username" placeholder="请输入用户名"><br>
+        <!-- 密码 -->
+        <label for="password">密码：</label>
+        <input type="text" name="password" id="password" placeholder="请输入密码"><br>
+        <!-- 登录按钮 -->
+        <button type="button">登录</button>
+    </form>
+    <hr>
+    <h1>表单控件</h1>
+    <form action="#" method="post">
+        <!-- 多行文本框 -->
+        <textarea name="info" id="info" cols="30" rows="10" placeholder="请填写简介"></textarea><br>
+        <!-- 单选按钮 -->
+        <label for=""><input type="radio" name="gender" value="male">男</label>
+        <label for=""><input type="radio" name="gender" id="female">女</label>
+        <br>
+        <!-- 复选框 -->
+        <span>请选择你的爱好：</span>
+        <label for="">
+            <input type="checkbox" name="hobby" value="football">足球
+        </label>
+        <label for="">
+            <input type="checkbox" name="hobby" value="go-kart">卡丁车
+        </label><br>
+        <!-- 下拉列表 -->
+        <select name="city" id="city">
+            <option value="">--请选择你的城市--</option>
+            <option value="beijing">北京</option>
+            <option value="chengdu">成都</option>
+            <option value="guangzhou">广州</option>
+        </select><br>
+        <!-- 按钮 -->
+        <button type="reset">重置</button>
+        <button type="submit">提交</button>
+    </form>
+    <hr>
+    <h1>html 多媒体标签</h1>
+    <h2>音频标签</h2>
+    <audio controls>
+        <source type="audio/mpeg" src="https://www.runoob.com/try/demo_source/horse.mp3">
+    </audio>
+    <h2>视频标签</h2>
+    <video controls width="600px" height="400">
+        <source type="video/mp4" src="https://www.runoob.com/try/demo_source/movie.mp4">
+    </video>
+    <hr>
+    <h1>html 布局</h1>
+    <h2>块级元素</h2>
+    <p>
+        有 p 标签， div 标签，h1～h6标题标签等
+    </p>
+    
+</body>
+
+</html>
