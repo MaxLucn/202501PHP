@@ -1,0 +1,29 @@
+/* 紧邻兄弟选择器（+）:选择紧跟在某元素后的第一个兄弟元素 */
+.highlight + p {
+    color: red;
+    font-weight: bold;
+}
+
+/* 通用兄弟选择器（～）：选择某元素之后的所有兄弟元素 */
+.highlight ~ p {
+    background-color: lightgray;
+}
+
+/* 属性选择器：选择带有特定属性的元素 */
+input[placeholder] {
+    border: 2px solid blue;
+}
+
+/* 伪类选择器 */
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+p:first-child {
+    font-style: italic;
+}
+
+p:nth-child(odd) {
+    background-color: lightyellow;
+}
