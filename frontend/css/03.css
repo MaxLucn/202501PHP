@@ -1,0 +1,27 @@
+/* 背景图片自适应 */
+.background-container {
+    width: 100%;
+    height: 300px;
+    background-image: url('background.jpg');
+    background-size: cover; /* 适应整个容器 */
+    background-position: center; /* 居中显示 */
+    background-repeat: no-repeat;
+}
+
+/* 盒子边框与阴影 */
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* 自定义字体和文本样式 */
+.styled-text {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: #ff6600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
